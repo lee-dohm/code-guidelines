@@ -23,6 +23,8 @@ Readability should be the #1 concern when writing code. Code is read far more of
 > Thou shalt make thy program's purpose and structure clear to thy fellow man by using the One True Brace Style, even if thou likest it not, for thy creativity is better used in solving problems than in creating beautiful new impediments to understanding.<br/>
 > -- [8<sup>th</sup> C Commandment](http://www.lysator.liu.se/c/ten-commandments.html)
 
+If there aren't clear standards for the language, pick a standard and stick with it. Any standard is better than no standard.
+
 * **DO** keep lines to 100 characters or less
 * **DO** keep functions short
 
@@ -53,8 +55,16 @@ public void foo() {
 }
 ```
 
+The maximum recommended length of functions will vary by language, but in almost any language fifty lines is too long and twenty lines or less is pretty good.
+
 ## Exceptions
 
-* **DO NOT** simply swallow exceptions
+* **DO** catch exceptions which you can handle or recover from
+* **CONSIDER** catching exceptions to log them or repackage them as more specific exceptions, but always re-throw
+* **AVOID** simply swallowing exceptions
+
+It is rarely the right thing to do, but there are circumstances where it can be. For example, in some languages parsing data can throw an exception when the data isn't recognized. In this limited case, catching the exception and moving on can be acceptable.
+
 * **DO NOT** catch `Exception` (or whatever the generic exception type is in the language in which you are writing code)
 
+Because you should only catch exceptions that you can handle or recover from (unless you're rethrowing them), you should never catch the base exception class. Additionally, by letting exceptions crash the application while you're developing it, you can find out what is causing problems and *fix the problems*. (See Martin Fowler's article [Fail Fast](http://martinfowler.com/ieeeSoftware/failFast.pdf).)
