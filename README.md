@@ -75,6 +75,8 @@ Thread.sleep(STANDARD_WAIT_TIME);
 
 ## Exceptions
 
+There have been a lot of misconceptions about exceptions and exception handling over the years. What exceptions do for you is create a separate code path for dealing with error states. This way you can write your mainline code the way you've always wanted, one statement after another assuming that everything works along the way. When something fails, it goes to the error handler. This is the way that the best programmers have been writing their code for decades, there just wasn't built-in language support for it. Now there is.
+
 * **DO** catch exceptions which you can handle or recover from
 * **CONSIDER** catching exceptions to log them or repackage them as more specific exceptions, but always re-throw
 * **AVOID** simply swallowing exceptions
