@@ -59,6 +59,8 @@ public void foo() {
 
 The maximum recommended length of functions will vary by language, but in almost any language fifty lines is too long and twenty lines or less is pretty good.
 
+**See also:** [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/), chapter 3
+
 ## Exceptions
 
 * **DO** catch exceptions which you can handle or recover from
@@ -69,4 +71,6 @@ It is rarely the right thing to do, but there are circumstances where it can be.
 
 * **DO NOT** catch `Exception` (or whatever the generic exception type is in the language in which you are writing code)
 
-Because you should only catch exceptions that you can handle or recover from (unless you're rethrowing them), you should never catch the base exception class. Additionally, by letting exceptions crash the application while you're developing it, you can find out what is causing problems and *fix the problems*. (See Martin Fowler's article [Fail Fast](http://martinfowler.com/ieeeSoftware/failFast.pdf).)
+Because you should only catch exceptions that you can handle or recover from (unless you're rethrowing them), you should never catch the base exception class. Additionally, by letting exceptions crash the application while you're developing it, you can find out what is causing problems and *fix the problems*.
+
+**See also:** Martin Fowler's article [Fail Fast](http://martinfowler.com/ieeeSoftware/failFast.pdf)
