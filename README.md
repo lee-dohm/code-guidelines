@@ -61,6 +61,20 @@ The maximum recommended length of functions will vary by language, but in almost
 
 **See also:** [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/), chapter 3
 
+## Maintainability
+
+* **AVOID** using literals in your code except to initialize constants
+
+The only literals you should be able to find in your code outside of initializing constants are: 0, 1 and the empty string.
+
+```java
+// Bad
+Thread.sleep(5000);
+
+// Good
+Thread.sleep(STANDARD_WAIT_TIME);
+```
+
 ## Exceptions
 
 * **DO** catch exceptions which you can handle or recover from
