@@ -1,5 +1,7 @@
 # Code Guidelines
 
+This is my endeavor to collect the language-agnostic coding guidelines I have come across over the years.
+
 ## Format of Rules
 
 Because there are very few complete absolutes when talking about coding standards, it is useful to document not only the rule itself, but how stringently we expect adherence to the rule to be. To this end, each rule will be stated as one of the following:
