@@ -63,9 +63,7 @@ The maximum recommended length of functions will vary by language, but in almost
 
 ## Maintainability
 
-* **AVOID** using literals in your code except to initialize constants
-
-The only literals you should be able to find in your code outside of initializing constants are: 0, 1 and the empty string.
+* **AVOID** using numeric literals in your code
 
 ```java
 // Bad
