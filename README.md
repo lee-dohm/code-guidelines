@@ -73,6 +73,13 @@ Thread.sleep(5000);
 Thread.sleep(STANDARD_WAIT_TIME);
 ```
 
+## Comments
+
+* **DO** document your code using a documentation comments facility available for the language
+* **AVOID** putting comments inside the body of functions
+
+Comments inside the body of a function are almost always signs that the code needs to be rewritten for more clarity.
+
 ## Exceptions
 
 There have been a lot of misconceptions about exceptions and exception handling over the years. What exceptions do for you is create a separate code path for dealing with error states. This way you can write your mainline code the way you've always wanted, one statement after another assuming that everything works along the way. When something fails, control is automatically passed to the error handler. This is the way that the best programmers have been writing their code for decades, there just wasn't built-in language support for it before.
