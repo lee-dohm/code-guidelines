@@ -70,7 +70,9 @@ Let's use the common acronym HTML in an identifier name as an example:
 |camelCase     |htmlText  |
 |PascalCase    |HtmlText  |
 |snake_case    |html_text |
-|SCREAMING_CAPS|HTML_TEXT|
+|SCREAMING_CAPS|HTML_TEXT |
+
+* **DO NOT** use [Hungarian Notation](http://en.wikipedia.org/wiki/Hungarian_notation) in identifier naming
 
 ## Maintainability
 
