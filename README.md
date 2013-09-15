@@ -1,5 +1,8 @@
 # Code Guidelines
 
+> What is this talk of "release"? Klingons do not make software "releases". Our software *escapes*, leaving a bloody trail of designers and quality assurance people in its wake.<br/>
+> -- From "Top 12 Things a Klingon Programmer Would Say"
+
 This is my endeavor to collect the language-agnostic coding guidelines I have come across over the years.
 
 ## Format of Rules
