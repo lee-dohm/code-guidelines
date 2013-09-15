@@ -3,7 +3,7 @@
 > What is this talk of "release"? Klingons do not make software "releases". Our software *escapes*, leaving a bloody trail of designers and quality assurance people in its wake!<br/>
 > &mdash; From "Top 12 Things a Klingon Programmer Would Say"
 
-This is my endeavor to collect the language-agnostic coding guidelines I have come across over the years.
+Have you ever been on that project? The project that feels like all the code was written by a ham-fisted Klingon? I have, fortunately only once or twice. But there is rarely a code base that doesn't have weak spots here and there. And while language-specific coding guidelines can be found 'a-plenty, I find that the majority of their advice is the same. About the only parts that are different are the parts that don't really make much difference to readability, maintainability or other such values ... things like capitalization of identifiers and brace alignment. So, this is my endeavor to collect the language-agnostic coding guidelines I have come across over the years and put them in one place where hopefully they can just be referred to and language-specific guidelines can concentrate on the differences.
 
 ## Format of Rules
 
