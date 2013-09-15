@@ -61,6 +61,17 @@ The maximum recommended length of functions will vary by language, but in almost
 
 **See also:** [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/), chapter 3
 
+* **DO** capitalize acronyms in identifiers as if they were normal words
+
+Let's use the common acronym HTML in an identifier name as an example:
+
+|Casing        |Identifier|
+|--------------|---------:|
+|camelCase     |htmlText  |
+|PascalCase    |HtmlText  |
+|snake_case    |html_text |
+|SCREAMING_CAPS|HTML_TEXT|
+
 ## Maintainability
 
 * **AVOID** using numeric literals in your code
