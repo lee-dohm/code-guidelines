@@ -1,7 +1,7 @@
 # Code Guidelines
 
 > What is this talk of "release"? Klingons do not make software "releases". Our software *escapes*, leaving a bloody trail of designers and quality assurance people in its wake.<br/>
-> -- From "Top 12 Things a Klingon Programmer Would Say"
+> &mdash; From "Top 12 Things a Klingon Programmer Would Say"
 
 This is my endeavor to collect the language-agnostic coding guidelines I have come across over the years.
 
@@ -19,14 +19,14 @@ Because there are very few complete absolutes when talking about coding standard
 ## Readability
 
 > Always code as if the person who ends up maintaining your code is a violent psychopath who knows where you live.<br/>
-> -- [Coding Horror blog](http://www.codinghorror.com/blog/2008/06/coding-for-violent-psychopaths.html)
+> &mdash; [Coding Horror blog](http://www.codinghorror.com/blog/2008/06/coding-for-violent-psychopaths.html)
 
 Readability should be the #1 concern when writing code. Code is read far more often than it is written, so one should optimize for that fact.
 
 * **DO** follow formatting and naming standards for the language
 
 > Thou shalt make thy program's purpose and structure clear to thy fellow man by using the One True Brace Style, even if thou likest it not, for thy creativity is better used in solving problems than in creating beautiful new impediments to understanding.<br/>
-> -- [8<sup>th</sup> C Commandment](http://www.lysator.liu.se/c/ten-commandments.html)
+> &mdash; [8<sup>th</sup> C Commandment](http://www.lysator.liu.se/c/ten-commandments.html)
 
 If there aren't clear standards for the language, pick a standard and stick with it. Any standard is better than no standard.
 
