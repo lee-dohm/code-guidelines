@@ -30,6 +30,13 @@ Readability should be the #1 concern when writing code. Code is read far more of
 
 If there aren't clear standards for the language, pick a standard and stick with it. Any standard is better than no standard.
 
+* **DO** follow the basic input &rarr; process &rarr; output &rarr; handle errors structure
+
+By creating this essentially [Three-act structure](https://en.wikipedia.org/wiki/Three-act_structure), it makes your code easier to read and understand. Sadly, many methods look more like this excerpt by [Avdi Grimm](http://about.avdi.org/) from his book:
+
+> You exit the passageway into a large cavern. Unless you came from page 59, in which case you fall down the sinkhole into a large cavern. A huge troll, or possibly a badger (if you already visited Queen Pelican), blocks your path. Unless you threw a button down the wishing well on page 8, in which case there nothing blocking your way. The [troll or badger or nothing at all] does not look happy to see you.<br/>
+> &mdash; [Confident Ruby](http://www.confidentruby.com/)
+
 * **DO** keep lines to 100 characters or less
 * **DO** keep functions short
 
