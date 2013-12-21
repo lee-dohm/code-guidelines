@@ -123,6 +123,6 @@ It is rarely the right thing to do, but there are circumstances where it can be.
 
 Because you should only catch exceptions that you can handle or recover from (unless you're rethrowing them), you should never catch the base exception class. Additionally, by letting exceptions crash the application while you're developing it, you can find out what is causing problems and *fix the problems*.
 
-The one exception to this rule is writing an exception handler at the outermost scope of the application or thread. In some applications the right thing to do is to catch an exception at the outermost scope to log it just before allowing the application to terminate. And in many programming languages an uncaught exception in a thread crashes the entire application not just the single thread (and rightly so). The right thing to do there is to catch the exception, log it and signal the main thread what happened.
-
 **See also:** Martin Fowler's article [Fail Fast](http://martinfowler.com/ieeeSoftware/failFast.pdf)
+
+The one exception to this rule is writing an exception handler at the outermost scope of the application or thread. In some applications the right thing to do is to catch an exception at the outermost scope to log it just before allowing the application to terminate. And in many programming languages an uncaught exception in a thread crashes the entire application not just the single thread (and rightly so). The right thing to do there is to catch the exception, log it and signal the main thread what happened.
