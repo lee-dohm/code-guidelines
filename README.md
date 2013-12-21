@@ -117,7 +117,7 @@ There have been a lot of misconceptions about exceptions and exception handling 
 * **CONSIDER** catching exceptions to log them or repackage them as more specific exceptions, but always re-throw
 * **AVOID** simply swallowing exceptions
 
-It is rarely the right thing to do, but there are circumstances where it can be. For example, in some languages parsing data can throw an exception when the data isn't recognized. In this limited case, catching the exception and moving on can be acceptable.
+It is rarely the right thing to do, but there are circumstances where it can be. For example, in some languages parsing data can throw an exception when the data isn't recognized. In limited cases like this one, catching the exception and moving on can be acceptable.
 
 * **DO NOT** catch `Exception` (or whatever the generic exception type is in the language in which you are writing code)
 
