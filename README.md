@@ -105,6 +105,10 @@ Thread.sleep(STANDARD_WAIT_TIME);
 
 Comments inside the body of a function are almost always signs that the code needs to be rewritten for more clarity.
 
+* **DO NOT** check in commented out code
+
+You might be tempted to say that you may need it later, or that it is used for debugging, or it is there for reference. But code that is commented out is not maintained along with the rest of the system. It is not tested. It quickly begins to not match up with the code around it. And before long, even if you were going to uncomment it at some point, you would have to rewrite it anyway. Just delete it and be done with it or uncomment it and put some sort of configuration switch in that will allow it to be tested and therefore maintained.
+
 ## Exceptions
 
 There have been a lot of misconceptions about exceptions and exception handling over the years. What exceptions do for you is create a separate code path for dealing with error states. This way you can write your mainline code the way you've always wanted, one statement after another assuming that everything works along the way. When something fails, control is automatically passed to the error handler. This is the way that the best programmers have been writing their code for decades, there just wasn't built-in language support for it before.
