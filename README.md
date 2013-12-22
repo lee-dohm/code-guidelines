@@ -30,6 +30,8 @@ Readability should be the #1 concern when writing code. Code is read far more of
 
 If there aren't clear standards for the language, pick a standard and stick with it. Any standard is better than no standard.
 
+* **DO** use a coding standard checking tool to automate the drudgery of compliance checking
+
 Also, a standard that isn't enforced isn't really a standard. And coding standards really need a tool to properly enforce them, [RuboCop](https://github.com/bbatsov/rubocop) is an example of a coding standard-enforcing tool for Ruby. [StyleCop](https://stylecop.codeplex.com/) is an example for C#. Pick a tool, configure it so that it runs automatically on all code and then it is easy for everyone to follow the standard.
 
 * **DO** follow the basic input &rarr; process &rarr; output &rarr; handle errors structure
