@@ -75,6 +75,32 @@ The maximum recommended length of functions will vary by language, but in almost
 
 **See also:** [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/), chapter 3
 
+* **DO** write easy-to-understand, idiomatic code
+
+What I mean by idiomatic code is code that is written the way the majority of other developers would write it. For example, here are two loops to print the numbers from 1 to 100 in C:
+
+```c
+/* Bad */
+int i = 0;
+while (i < 100) {
+    printf("%d\n", i + 1);
+    ++i;
+}
+
+/* Good */
+for (int i = 0; i < 100; i++) {
+    printf("%d\n", i + 1);
+}
+```
+
+They both result in the exact same output. They probably even compile to the same code. Which is more readable? The second one, because when you need to iterate over a series with known limits, also known as "definite iteration", a `for` loop is the standard, idiomatic method in C. The reader sees that it is a standard chunk of code that they are familiar with and it is much easier for the reader to understand.
+
+* **DO NOT** go overboard with simplifying your code
+
+Some people take the above practice to mean that we shouldn't use language constructs that are hard for beginners to grasp at first or that beginners don't normally use right away. A couple examples are the ternary `if-else` operator and lambdas in languages like C#. Code should be most readable to the intermediate majority.
+
+**See also:** [About Face](http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/), chapter 3: Perpetual Intermediates
+
 ## Naming
 
 * **DO** capitalize acronyms in identifiers as if they were normal words
